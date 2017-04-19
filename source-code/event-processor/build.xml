@@ -5,7 +5,7 @@
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="${dir.buildfile}/.."/>
-    <property name="dir.jarfile" value="C:/Users/bmohammad/demo/runnable-jar"/>
+    <property name="dir.jarfile" value="C:/Users/bmohammad/docker-training/infrastructure-code/event-processor"/>
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/event-processor.jar" filesetmanifest="mergewithoutmain">
             <manifest>
