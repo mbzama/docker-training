@@ -69,7 +69,7 @@
 					<configuration>
 						<warName>hr-web</warName>
 						<warSourceDirectory>src/main/webapp</warSourceDirectory>
-						<outputDirectory>C:\Users\bmohammad\demo\war\hr-web</outputDirectory>
+						<outputDirectory>C:\Users\bmohammad\docker-training\infrastructure-code\hr-app\hr-web</outputDirectory>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
 					</configuration>
 				</plugin>
