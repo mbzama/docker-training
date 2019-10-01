@@ -73,7 +73,31 @@ Copy from Docker Container to Host machine:
      	Run the file
 	   		sh run.sh
  
- 
+
+
+## Upload image to public registry (dockerhub)
+
+   1. Create account in dockerhub: 
+   
+              https://hub.docker.com
+
+  2. Create docker repository with name as: 
+  
+              java8-app
+	    	
+  3. Login to dockerhub registry
+  
+	      docker login --username={user_name} 
+
+  4. Tag the image
+  
+	     docker tag java8-app {user_name}/java8-app
+
+  5. Upload the image to public docker registry:
+  
+	     docker push {user_name}/java8-app
+	     
+	     
     
 ## Examples
 - [Java](https://github.com/mbzama/docker-examples-java)
