@@ -1,9 +1,24 @@
-# docker-training
+## Installation
+	Please refer to this repo for instructions:  [docker-setup] (https://github.com/mbzama/docker-setup)
+   
+   
 
-Please go through the Lab excercises in this Order:
- - Docker_Setup_Windows_OS.docx
- - Docker Training Assignment - Runnable Jar.docx
- - Docker Training Assignment - Spring Boot.docx
- - Docker Training Assignment - Spring MVC+Angular.docx	
- - Docker Training Assignment - Copying files and folders.docx	
+## Cheatsheet
+	For more commands please refer to this file.
+    
+    
+    
+## Examples
+	   	- Java
+    	- NodeJs
+    	- Angular
+    	- MEAN
+    	- Python
+    	- Bonita
 
+
+## References
+		- Docker Hub
+		- AWS
+		- Azure Cloud
+		- Google Cloud
