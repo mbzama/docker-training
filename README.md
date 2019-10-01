@@ -3,8 +3,77 @@ Please refer to this repo for instructions: [docker-setup](https://github.com/mb
    
       
 ## Cheatsheet
-	For more commands please refer to this file.
+
+  To view active containers
+  
+	   docker ps 
+	
+  To view all containers
+  
+	   docker ps -a
+	
+  To view images
+  
+	   docker images
+
+  To remove container
+  
+	   docker rm -f {container_name}
+	
+  To remove image
+  
+	   docker rmi --image {image_name}
+    
+
+  To view logs
+  
+       docker logs -f {container_name}
+       docker logs -f {container_name} --tail 100
+
+  To clean up un-used resources
+  
+	   docker system prune
        
+For more commands please refer to this [cheatsheet](https://github.com/mbzama/docker-training/blob/master/docker-cheatsheet.pdf)
+     
+     
+       
+## Working with Volumes
+Create folder and file
+
+	     mkdir data
+	     nano run.sh
+	
+    
+Add this content 
+
+	echo <EMP_ID> Running run.sh file - '$(date)
+    
+	
+Copy from Host machine to Docker Container:
+
+    docker cp /host_dir container_name:/container_dir
+    
+
+Copy from Docker Container to Host machine:
+
+    docker cp container_name:/container_dir /host_dir
+   
+    Example:
+    	Copy file from host machine to container 
+	   		docker cp data/ container_name:/data	
+	
+     	Login to the docker container
+	   		docker exec -it container_name
+	
+     	Verify the file
+	   		ls -l data
+	   		cat data/run.sh
+	
+     	Run the file
+	   		sh run.sh
+ 
+ 
     
 ## Examples
 - [Java](https://github.com/mbzama/docker-examples-java)
@@ -13,6 +82,7 @@ Please refer to this repo for instructions: [docker-setup](https://github.com/mb
 - [MEAN](https://github.com/mbzama/docker-examples-mean)
 - [Python](https://github.com/mbzama/docker-examples-python)
 - [Bonita](https://github.com/mbzama/docker-examples-bonita)
+
 
 
 ## References
