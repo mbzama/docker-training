@@ -47,7 +47,7 @@ Create folder and file
     
 Add this content 
 
-	echo <EMP_ID> Running run.sh file - '$(date)
+	echo '<EMP_ID> Running run.sh file - '$(date)
     
 	
 Copy from Host machine to Docker Container:
