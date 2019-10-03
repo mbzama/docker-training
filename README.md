@@ -77,25 +77,20 @@ Copy from Docker Container to Host machine:
 
 ## Upload image to public registry (dockerhub)
 
-   1. Create account in dockerhub: 
+   1. Create account in [Docker Hub](https://hub.docker.com) using your personal email. 
    
-              https://hub.docker.com
-
-  2. Create docker repository with name as: 
-  
-              java8-app
-	    	
-  3. Login to dockerhub registry
+                  	
+  2. Login to dockerhub registry from command prompt using this command:
   
 	      docker login --username={user_name} 
 
-  4. Tag the image
+  3. Tag the image
   
-	     docker tag java8-app {user_name}/java8-app
+	     docker tag {image_name} {user_name}/{image_name}
 
-  5. Upload the image to public docker registry:
+  4. Upload the image to public docker registry:
   
-	     docker push {user_name}/java8-app
+	     docker push {user_name}/{image_name}
 	     
 	     
     
